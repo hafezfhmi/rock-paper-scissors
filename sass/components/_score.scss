@@ -1,0 +1,35 @@
+.score {
+  display: flex;
+  align-items: center;
+  padding: 2.4rem;
+  border: 0.4rem solid $colors-header-outline;
+  border-radius: 1rem;
+  margin: 4rem;
+  text-transform: uppercase;
+
+  &__shapes {
+    flex-grow: 1;
+    color: $colors-white;
+    font-size: 2.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__score-box {
+    background-color: $colors-white;
+    border-radius: 1rem;
+    padding: 1.2rem 3.2rem;
+    text-align: center;
+
+    &__title {
+      color: $colors-score-text;
+      font-size: 1.4rem;
+      letter-spacing: 0.08rem;
+    }
+
+    &__count {
+      color: $colors-dark-text;
+      font-size: 4.8rem;
+      font-weight: 700;
+    }
+  }
+}

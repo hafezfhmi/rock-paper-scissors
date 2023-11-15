@@ -24,4 +24,8 @@ html {
 
 body {
   box-sizing: border-box;
+  background: $colors-radial-gradient;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-weight: 600;
 }

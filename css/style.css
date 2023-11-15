@@ -1,1 +1,79 @@
-body{background-color:#fff;color:#333;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143}/*# sourceMappingURL=style.css.map */
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800px:  Normal style
+1800px + :      Big desktop
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  padding: 2.4rem;
+  border: 0.4rem solid hsl(217, 16%, 45%);
+  border-radius: 1rem;
+  margin: 4rem;
+  text-transform: uppercase;
+}
+.score__shapes {
+  flex-grow: 1;
+  color: #fff;
+  font-size: 2.8rem;
+  line-height: 2.2rem;
+}
+.score__score-box {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.2rem 3.2rem;
+  text-align: center;
+}
+.score__score-box__title {
+  color: hsl(229, 64%, 46%);
+  font-size: 1.4rem;
+  letter-spacing: 0.08rem;
+}
+.score__score-box__count {
+  color: hsl(229, 25%, 31%);
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
