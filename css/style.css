@@ -55,9 +55,9 @@ body {
 }
 .score__shapes {
   flex-grow: 1;
-  color: #fff;
-  font-size: 2.8rem;
-  line-height: 2.2rem;
+}
+.score__shapes img {
+  height: 64px;
 }
 .score__score-box {
   background-color: #fff;
