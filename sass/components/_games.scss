@@ -23,6 +23,7 @@
     background-color: white;
     border-radius: 100%;
     border: 10px solid transparent;
+    cursor: pointer;
 
     & img {
       visibility: visible;
@@ -37,8 +38,6 @@
 
       background: linear-gradient(white, white) padding-box,
         $colors-rock-gradient border-box;
-      background-repeat: no-repeat;
-      background-position: center;
     }
 
     &--paper {
@@ -48,8 +47,6 @@
 
       background: linear-gradient(white, white) padding-box,
         $colors-paper-gradient border-box;
-      background-repeat: no-repeat;
-      background-position: center;
     }
 
     &--scissor {
@@ -59,8 +56,6 @@
 
       background: linear-gradient(white, white) padding-box,
         $colors-scissors-gradient border-box;
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
 }
