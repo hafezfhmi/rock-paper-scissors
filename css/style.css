@@ -76,4 +76,57 @@ body {
   font-weight: 700;
 }
 
+.game {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.game img {
+  visibility: hidden;
+}
+.game__container {
+  position: relative;
+  background-image: url("/images/bg-triangle.svg");
+  background-repeat: no-repeat;
+}
+.game__shapes {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 100%;
+  border: 10px solid transparent;
+}
+.game__shapes img {
+  visibility: visible;
+  width: 44%;
+}
+.game__shapes--rock {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: linear-gradient(white, white) padding-box, radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%)) border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.game__shapes--paper {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(white, white) padding-box, radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%)) border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.game__shapes--scissor {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background: linear-gradient(white, white) padding-box, radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /*# sourceMappingURL=style.css.map */

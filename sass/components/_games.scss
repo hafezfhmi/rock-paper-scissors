@@ -1,0 +1,66 @@
+.game {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  & img {
+    visibility: hidden;
+  }
+
+  &__container {
+    position: relative;
+    background-image: url("/images/bg-triangle.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__shapes {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100%;
+    border: 10px solid transparent;
+
+    & img {
+      visibility: visible;
+      width: 44%;
+    }
+
+    // Gradient border: https://codyhouse.co/nuggets/css-gradient-borders
+    &--rock {
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      background: linear-gradient(white, white) padding-box,
+        $colors-rock-gradient border-box;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--paper {
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+
+      background: linear-gradient(white, white) padding-box,
+        $colors-paper-gradient border-box;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--scissor {
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+
+      background: linear-gradient(white, white) padding-box,
+        $colors-scissors-gradient border-box;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
